@@ -1,3 +1,3 @@
 ﻿app.controller("CustomerTicketController", function ($scope, CustomerTicketService) {
-    $scope.helloMessage = "Hello";
+    $scope.helloMessage = "ticket system";
 });
