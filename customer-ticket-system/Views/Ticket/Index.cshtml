@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_TicketLayout.cshtml";
+}
+<main class="ticket-page">
+    <div class="w-50">
+        <div>
+            <h1 class="fw-bold text-white text-center">Create an Issue</h1>
+        </div>
+        <div class="rounded-3 form-conatiner">
+            <form class="bg-white rounded p-4">
+                <div class="mb-3">
+                    <label for="" class="form-label fw-semibold">Add a title</label>
+                    <input type="text" placeholder="Title" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label fw-semibold">Add a description</label>
+                    <textarea rows="10" placeholder="Description" class="form-control"></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class=" btn-rajah fw-semibold btn-large">Create Ticket</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
