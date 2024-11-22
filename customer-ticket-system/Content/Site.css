@@ -1,20 +1,151 @@
-﻿/* Set padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿:root {
+    --background: #1e1e1e;
+    --light-blue: #75B6E7;
+    --fire-fly: #091F2C;
+    --royal-blue: #4379E4;
+    --hero-image: #050A1D;
+    --white: #EFF0F3;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+body {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.header {
+    border-bottom: 2px solid var(--white);
+    background-color: var(--background);
+    padding: 1rem 2rem;
+    color: var(--white);
 }
+
+.logo {
+    height: 1.5rem;
+}
+
+.site-divider {
+    height: 1.5rem;
+    border-inline-start: 2px solid var(--white);
+    margin-inline-start: .5rem;
+    display: inline-block;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.link {
+    color: var(--light-blue);
+}
+
+.link:hover {
+    color: var(--royal-blue);
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.right-nav {
+
+}
+
+.learn-container {
+}
+
+.learn {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.column-1 {
+    columns: 1;
+    width: auto;
+    background-color: #050A1D;
+    padding: 25px;
+}
+
+.Q-A {
+    border-left-style: solid;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 5%;
+    color: var(--white);
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.column-left {
+}
+
+
+.banner-container {
+
+}
+
+.banner-heading {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+}
+
+.banner-desc {
+    font-size: 1rem;
+}
+
+.image-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.banner-img {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.question-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: .25rem;
+    padding-right: .25rem;
+
+}
+
+.question-card {
+    background-color: var(--fire-fly);
+    color: var(--white);
+    padding: 1rem 2rem;
+}
+
+.question-card .question-title {
+    color: var(--light-blue);
+    font-size: 1.5rem;
+}
+
+.question-card .question-text {
+    opacity: 90%;
+}
+

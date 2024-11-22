@@ -1,7 +1,37 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div class="image-container">
+    <img src="~/Content/Assets/steve-johnson-zBacOXolzPI-unsplash.jpg" class="banner-img">
+    <div class="column-2">
+        <div class="column-left">
+            <div class="banner-container">
+                <div class="banner-heading">
+                    <h2>DESKIFY | Q & A</h2>
+                    <p class="banner-desc"> Explore questions deigned to guide you through every stage of your technical journey</p>
+                </div>
+            </div>
+        </div>
+        <div class="column-right"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col l3">
 
-<main>
-    <h1 ng-model="helloMessage">{{ helloMessage }}</h1>
-</main>
+    </div>
+    <div class="col l9">
+        <div class="question-card-list">
+    <div ng-repeat="question in questions track by $index" class="question-card-list"> <div class="question-card">
+            <div>
+                <h3 class="question-title">
+                    <a class="link">
+                       {{ question.question }}
+                    </a>
+                </h3>
+                <p class="question-text">{{question.description}}</p>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
