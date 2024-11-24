@@ -26,7 +26,9 @@
             description: "Hello Team, I need to reduce the address space as below at the VNet for one of my project. this vnet also peered with other Vnet. also this vnet has express route and site to site vpn connected. by reducing i will save the ip address which i can use for…"
         },
     ]
+
     $scope.helloMessage = "Hello";
 
     $scope.numberOfQuestions = 360;
+
 });
