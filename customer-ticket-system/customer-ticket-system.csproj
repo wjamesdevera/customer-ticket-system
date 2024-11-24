@@ -197,6 +197,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Assets\Deskify Logo.png" />
+    <Content Include="Content\Assets\left-bg.png" />
+    <Content Include="Content\Assets\login-bg.png" />
     <Content Include="Content\Assets\LOGO MINI.png" />
     <Content Include="Content\Assets\LOGO.png" />
     <Content Include="Content\Assets\Right.png" />
@@ -221,6 +224,8 @@
     <Content Include="Content\datatables.min.css" />
     <Content Include="Content\materialize.css" />
     <Content Include="Content\materialize.min.css" />
+    <Content Include="Content\scss\login.css" />
+    <Content Include="Content\scss\signup.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -390,6 +395,8 @@
     <Content Include="Views\Ticket\Index.cshtml" />
     <Content Include="Views\Shared\_TicketLayout.cshtml" />
     <Content Include="Content\scss\custom.scss" />
+    <Content Include="Views\Shared\_SampleLayout.cshtml" />
+    <Content Include="Views\Auth\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
