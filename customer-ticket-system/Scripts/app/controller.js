@@ -27,4 +27,6 @@
         },
     ]
     $scope.helloMessage = "Hello";
+
+    $scope.numberOfQuestions = 360;
 });
