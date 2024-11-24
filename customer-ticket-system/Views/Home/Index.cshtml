@@ -17,21 +17,29 @@
 </div>
 <div class="row">
     <div class="col l3">
-
-    </div>
-    <div class="col l9">
-        <div class="question-card-list">
-    <div ng-repeat="question in questions track by $index" class="question-card-list"> <div class="question-card">
-            <div>
-                <h3 class="question-title">
-                    <a class="link">
-                       {{ question.question }}
-                    </a>
-                </h3>
-                <p class="question-text">{{question.description}}</p>
-            </div>
+        <div>
+            <h3 class="filter-title">Filter</h3>
+            <hr />
+            <h4 class="filter-title">Content</h4>
         </div>
     </div>
+    <div class="col l9 question-section">
+        <div class="question-header">
+            <h3 class="number-of-questions">{{ numberOfQuestions }} questions</h3>
+            <button class="btn">Ask a question</button>
+        </div>
+        <div class="question-card-list">
+            <div ng-repeat="question in questions track by $index" class="question-card-list"> <div class="question-card">
+                    <div>
+                        <h3 class="question-title">
+                            <a class="link">
+                               {{ question.question }}
+                            </a>
+                        </h3>
+                        <p class="question-text">{{question.description}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
