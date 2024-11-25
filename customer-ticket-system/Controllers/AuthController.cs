@@ -4,8 +4,8 @@ namespace customer_ticket_system.Controllers
 {
     public class AuthController : Controller
     {
-        // GET: Auth
-        public ActionResult Index()
+
+        public ActionResult Login()
         {
             return View();
         }

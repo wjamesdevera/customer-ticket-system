@@ -391,12 +391,13 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
-    <Content Include="Views\Auth\Index.cshtml" />
+    <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Ticket\Index.cshtml" />
     <Content Include="Views\Shared\_TicketLayout.cshtml" />
     <Content Include="Content\scss\custom.scss" />
     <Content Include="Views\Shared\_SampleLayout.cshtml" />
     <Content Include="Views\Auth\SignUp.cshtml" />
+    <Content Include="Views\Shared\_AuthLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
