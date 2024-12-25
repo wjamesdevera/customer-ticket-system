@@ -1,1 +1,1 @@
-﻿var app = angular.module("CustomerTicketApp", []);
+﻿var app = angular.module("CustomerTicketApp", ["loginForm"]);

@@ -7,12 +7,11 @@ using System.Web;
 
 namespace customer_ticket_system.Models
 {
-    [Table("users_tb")]
     public class User
     {
         [Key]
-        [Column("id")]
-        public int Id { get; set; }
+        [Column("user_id")]
+        public int UserId { get; set; }
         [Column("first_name")]
         public string FirstName { get; set; }
         [Column("last_name")]
@@ -23,9 +22,9 @@ namespace customer_ticket_system.Models
         [Column("password_hash")]
         public string PasswordHash { get; set; }
 
-        [Column("role")]
+        [Column("role_id")]
+
         public int RoleId { get; set; }
-        public Role Role { get; set; } = null;
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
         [Column("updated_at")]

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace customer_ticket_system.Models
 {
-    [Table("comments")]
+    [Table("comments_tb")]
     public class Comment
     {
         [Key]

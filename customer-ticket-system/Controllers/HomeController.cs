@@ -12,6 +12,7 @@ namespace customer_ticket_system.Controllers
     {
 
         readonly CustomerTicketDbContext _context = new CustomerTicketDbContext();
+
         public ActionResult Index()
         {
             return View();

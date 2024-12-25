@@ -1,0 +1,25 @@
+﻿
+<div class="login-form" ng-app="loginForm" ng-controller="loginFormController">
+    <div ng-if="page == 0">
+        <img src="~/Content/Assets/Deskify Logo.png" />
+        <h2 class="title">Sign In</h2>
+        <input type="email" placeholder="Enter your Email" required class="email-text-field"  ng-model="email"/>
+        <p class="text">No account?<a href="#">Create one!</a></p>
+        <a href="#">Can't access your account?</a>
+        <div class="btns">
+            <button class="backBtn btn">Back</button>
+            <button class="nextBtn btn" ng-click="loginNext()">Next</button>
+        </div>
+    </div>
+    <div ng-if="page == 1">
+        <img src="~/Content/Assets/Deskify Logo.png" />
+        <h2 class="title">Sign In</h2>
+        <input type="password" placeholder="Enter your password" required class="password-text-field" ng-model="password"/>
+        <p class="text">No account?<a href="#">Create one!</a></p>
+        <a href="#">Can't access your account?</a>
+        <div class="btns">
+            <button class="backBtn btn" ng-click="loginBack()">Back</button>
+            <button class="nextBtn btn" ng-click="loginNext()">Next</button>
+        </div>
+    </div>
+</div>

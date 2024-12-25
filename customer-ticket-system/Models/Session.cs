@@ -7,18 +7,16 @@ using System.Web;
 
 namespace customer_ticket_system.Models
 {
-    [Table("roles_tb")]
-    public class Role
+    public class Session
     {
         [Key]
-        [Column("role_id")]
-        public int RoleId { get; set; }
-
-        [Column("name")]
-        public string Name { get; set; }
+        [Column("session_id")]
+        public string SessionId { get; set; }
+        [Column("user_id")]
+        public int UserId { get; set; }
         [Column("created_at")]
         public DateTime CreatedAt { get; set; }
-        [Column("updated_at")]
-        public DateTime UpdatedAt { get; set; }
+        [Column("expires_at")]
+        public DateTime ExpiresAt { get; set; }
     }
 }

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace customer_ticket_system.Models
 {
-    [Table("labels")]
+    [Table("labels_tb")]
     public class Label
     {
         [Key]
